@@ -59,6 +59,7 @@ to [gulp-rename][] them if you need something different.
 [gulp]: http://gulpjs.com
 [gulp-coffee]: https://github.com/wearefractal/gulp-coffee
 [gulp-ejs]: https://github.com/rogeriopvl/gulp-ejs
+[gulp-ejs-precompiler]: https://github.com/christophehurpeau/gulp-ejs-precompiler
 [gulp-jade]: https://github.com/phated/gulp-jade
 [gulp-less]: https://github.com/plus3network/gulp-less
 [gulp-rename]: https://github.com/hparra/gulp-rename
