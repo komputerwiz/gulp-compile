@@ -1,0 +1,29 @@
+{
+  "name": "gulp-compile",
+  "version": "1.0.0",
+  "description": "Gulp filter for compiling templates into JS source code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/komputerwiz/gulp-compile.git"
+  },
+  "keywords": [
+    "gulp",
+    "template",
+    "compile"
+  ],
+  "author": "Matthew Barry <komputerwiz.matt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/komputerwiz/gulp-compile/issues"
+  },
+  "homepage": "https://github.com/komputerwiz/gulp-compile",
+  "dependencies": {
+    "gulp-util": "^3.0.2",
+    "lodash": "^2.4.1",
+    "through2": "^0.6.3"
+  }
+}
