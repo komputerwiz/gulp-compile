@@ -10,6 +10,7 @@ module.exports = function (options) {
     var opts = _.defaults(_.clone(options) || {}, {
         // use lodash/underscore compiler by default
         compiler: _.template,
+        extension: '.js'
     });
 
     return through.obj(function (file, encoding, next) {
@@ -32,7 +33,7 @@ module.exports = function (options) {
             file.contents = new Buffer(compiled.toString());
 
             // rename file to .js extension
-            file.path = replaceExt(file.path, '.js');
+            file.path = replaceExt(file.path, opts.extension);
         }
 
         // pass (potentially) compiled template along
