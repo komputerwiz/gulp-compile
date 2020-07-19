@@ -1,4 +1,5 @@
-var gutil = require('gulp-util');
+var PluginError = require('plugin-error');
+var replaceExt = require('replace-ext');
 var through = require('through2');
 var _ = require('lodash');
 
@@ -8,7 +9,7 @@ module.exports = function (options) {
     // default options
     var opts = _.defaults(_.clone(options) || {}, {
         // use lodash/underscore compiler by default
-        compiler: _.template
+        compiler: _.template,
     });
 
     return through.obj(function (file, encoding, next) {
@@ -18,7 +19,7 @@ module.exports = function (options) {
 
         if (file.isStream()) {
             // emit error, but keep processing
-            this.emit('error', new gutil.PluginError('compile', 'Streaming not supported'));
+            this.emit('error', new PluginError('compile', 'Streaming not supported'));
             return next();
         }
 
@@ -31,7 +32,7 @@ module.exports = function (options) {
             file.contents = new Buffer(compiled.toString());
 
             // rename file to .js extension
-            file.path = gutil.replaceExtension(file.path, '.js');
+            file.path = replaceExt(file.path, '.js');
         }
 
         // pass (potentially) compiled template along
