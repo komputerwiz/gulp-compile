@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/komputerwiz/gulp-compile",
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "plugin-error": "^1.0.1",
     "replace-ext": "^2.0.0",
     "through2": "^4.0.2"
