@@ -23,7 +23,7 @@
   "homepage": "https://github.com/komputerwiz/gulp-compile",
   "dependencies": {
     "gulp-util": "^3.0.2",
-    "lodash": "^2.4.1",
+    "lodash": "^4.17.19",
     "through2": "^0.6.3"
   }
 }
