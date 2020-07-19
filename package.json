@@ -1,6 +1,6 @@
 {
   "name": "gulp-compile",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Gulp filter for compiling templates into JS source code.",
   "main": "index.js",
   "scripts": {
